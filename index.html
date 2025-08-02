@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Botão para Portal Jogos</title>
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="abrirLink()">Abrir Portal Jogos</button>
+
+  <script>
+    function abrirLink() {
+      // Abre o link em uma nova aba segura
+      window.open("https://sites.google.com/view/portal-jogos/inicio", "_blank", "noopener,noreferrer");
+    }
+  </script>
+</body>
+</html>
